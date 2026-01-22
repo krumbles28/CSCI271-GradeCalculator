@@ -96,25 +96,26 @@ public class CSCI271_Assignment1_KyrahEagleton_W30687981 {
                    totalfin = ((.4*totalF) + (.2 * totalM) + (.1*totalT) +(.3*totalA))/100;
                }
               
-               totalfin =totalfin*100; // converts the percent to a whole number out of 100
+               totalfin =totalfin*100 ; // converts the percent to a whole number out of 100
+               String formattedGrade = String.format("%.2f", totalfin); //Formatting the total grade into a decimal length of 2
 
                /*assigns a letter grade to each student based on the their final grade */
                if (totalfin >= 90) 
                {
-                    System.out.println(studentData.get(i)[0] + "'s final grade is an A");
+                    System.out.println(studentData.get(i)[0] + "'s final grade is an A (" +formattedGrade+ "%)");
                } else if (totalfin >= 80) 
                {
-                    System.out.println(studentData.get(i)[0] + "'s final grade is a B");
+                    System.out.println(studentData.get(i)[0] + "'s final grade is a B ("+ formattedGrade+ "%)");
                
                } else if (totalfin >= 70) 
                {
-                  System.out.println(studentData.get(i)[0] + "'s final grade is a C");
+                  System.out.println(studentData.get(i)[0] + "'s final grade is a C (" +formattedGrade+ "%)");
                } else if (totalfin >= 60)
                {
-                  System.out.println(studentData.get(i)[0] + "'s final grade is a D");
+                  System.out.println(studentData.get(i)[0] + "'s final grade is a D (" + formattedGrade+"%)");
                }else 
                {
-                  System.out.println(studentData.get(i)[0] + "'s final grade is an F");
+                  System.out.println(studentData.get(i)[0] + "'s final grade is an F (" + formattedGrade +"%)");
                }
                
            }
