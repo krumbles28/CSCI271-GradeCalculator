@@ -1,0 +1,10 @@
+﻿Kyrah Eagleton
+Dr. Klement 
+Algorithm Analysis and Data Structures
+22 January 2026
+
+
+Assignment 1: Implement Our Grading Scheme in JAVA
+
+
+For this assignment, I was tasked with implementing the grading scheme for this class into a  java program. I did this by taking the CSV file that contained the test cases, and using that as the main way my program will gather the information needed for these equations. With this it is expected for any new entries of students into the program to alter that CSV file and maintain the formatting in said file. After reading this file the program parses through the information given and averages the assignment and test grades while setting the midterm and final exam as variables. This allows me to calculate for E and W, both being crucial to calculating the Final grade with this equation. When calculating the value for W I realized that in that equation it had 60 being subtracted from E. This caused many of the grades to be in the negative, which should not be possible. To rectify this I converted the, assumedly, value of 60 percent into .6, the decimal version. After that issue was fixed, I went on to implement the piecewise function into my code. I did this by converting it into a if else statement where the ranges for E were the conditionals. Once all of this was done, I noticed a trend in the test cases with their scores and their final grades. Through careful analysis, I found that doing relatively well on the midterm and final were the only way to do relatively well in the course. In the test cases that did not do well on said exams, these scores brought their grade down significantly regardless of their other scores on tests and assignments. With this knowledge I gathered through making this program I have realized that the cumulative knowledge gained from this class is the most impactful on your grade.
